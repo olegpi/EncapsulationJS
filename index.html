@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Singleton JS</title>
+    <script src="index.js" type="text/javascript"></script>
+    <script>
+		document.addEventListener("DOMContentLoaded", function() { 
+	 
+			document.getElementById("msg1").innerHTML = `Brand (public): ${vehicleClass.vehicleBrand('RAM')}`;
+			document.getElementById("msg11").innerHTML = `Brand (private): ${vehicleClass.brand}`;
+			console.log(vehicleClass.brand);
+
+			document.getElementById("msg2").innerHTML = `Price (public): ${vehicleClass.vehiclePrice}`;	 
+			document.getElementById("msg22").innerHTML = `Price (private): ${vehicleClass.price}`;
+			console.log(vehicleClass.price); 
+
+			document.getElementById("msg3").innerHTML = `Color (public): ${vehicleClass.vehicleColor('Yellow')}`;
+			document.getElementById("msg33").innerHTML = `Color (private): ${vehicleClass.color}`;			
+			console.log(vehicleClass.color('Yellow'));  
+		});		
+	</script>
+  </head>
+  <body>
+  <h2>Encapsulation</h2>
+  <div id="msg1"></div>
+  <div id="msg11"></div><br/>
+  <div id="msg2"></div> 
+  <div id="msg22"></div><br/>  
+  <div id="msg3"></div>
+  <div id="msg33"></div>  
+  </body>
+</html>
